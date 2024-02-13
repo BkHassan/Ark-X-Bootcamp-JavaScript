@@ -1,5 +1,5 @@
 const fs = require("fs").promises;
-const cities = require("./temperature.js");
+const cities = require("./temperature");
 
 fs.readFile("input.txt", "utf8")
   .then((cityName) => {
