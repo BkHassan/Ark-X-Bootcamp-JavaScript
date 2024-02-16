@@ -16,8 +16,9 @@ function selectRandomCity(arr) {
   const randomCity = arr[randomIndex];
   return randomCity;
 }
+
 let RandomCity = selectRandomCity(cities);
-console.log(RandomCity.name);
+// console.log(RandomCity.name);
 
 let lat = RandomCity.lat;
 let lng = RandomCity.lng;
@@ -27,6 +28,8 @@ async function fetching() {
     `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lng}&current_weather=true`
   );
   const data = await response.json();
-  console.log(data.current_weather.temperature + " " + data.current_weather_units.temperature);
+  // console.log(data.current_weather.temperature +" " + data.current_weather_units.temperature);
 }
-fetching()
+fetching();
+
+module.exports = cities;

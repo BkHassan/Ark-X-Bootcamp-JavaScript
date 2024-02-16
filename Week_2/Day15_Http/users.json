@@ -1,0 +1,74 @@
+[
+  {
+    "accountID": "ACC1001",
+    "name": "John Doe",
+    "pin": "1234",
+    "balance": 1500,
+    "transactions": [
+      {
+        "type": "deposit",
+        "amount": 500,
+        "date": "2024-02-01"
+      },
+      {
+        "type": "withdraw",
+        "amount": 200,
+        "date": "2024-02-02"
+      }
+    ]
+  },
+  {
+    "accountID": "ACC1002",
+    "name": "Jane Smith",
+    "pin": "4321",
+    "balance": 2200,
+    "transactions": [
+      {
+        "type": "deposit",
+        "amount": 1000,
+        "date": "2024-02-03"
+      },
+      {
+        "type": "withdraw",
+        "amount": 300,
+        "date": "2024-02-04"
+      }
+    ]
+  },
+  {
+    "accountID": "azo7304",
+    "name": "hassan",
+    "pin": "0120",
+    "balance": 50,
+    "transactions": [
+      {
+        "type": "deposit",
+        "amount": 100,
+        "date": "2024-02-13"
+      },
+      {
+        "type": "withdraw",
+        "amount": 50,
+        "date": "2024-02-13"
+      }
+    ]
+  },
+  {
+    "accountID": "bgC2993",
+    "name": "oussama",
+    "pin": "8264",
+    "balance": 200,
+    "transactions": [
+      {
+        "type": "deposit",
+        "amount": 300,
+        "date": "2024-02-13"
+      },
+      {
+        "type": "withdraw",
+        "amount": 100,
+        "date": "2024-02-13"
+      }
+    ]
+  }
+]

@@ -30,7 +30,7 @@ let employeeArr = [];
 let update = [];
 for (i = 0; i < data.length; i++) {
   //   console.log(employee);
-  
+
   let employee = data[i];
   let bonusAmount = 0;
   let bonusPercentage = 0;
@@ -56,6 +56,4 @@ for (i = 0; i < data.length; i++) {
 let wb = XLSX.utils.book_new();
 let newWS = XLSX.utils.json_to_sheet(employeeArr);
 XLSX.utils.book_append_sheet(wb, newWS, "data");
-XLSX.writeFile(wb,"data.xlsx");
-
-
+XLSX.writeFile(wb, "data.xlsx");
