@@ -1,30 +1,11 @@
 const express = require("express");
-const routes = require("./routes/postRoutes");
 const app = express();
+const postRouter = require("./routers/postRoute");
 
 app.use(express.json());
 
-app.use((req, res, next) => 
-{
-    const now = new Date().toString()
-    console.log(req.method+" "+req.path+" "+now);
-    next();
+app.use("/", postRouter);
 
-});
-
-
-app.use('/postRoutes', routes);
-
-
-
-
-app.use((err, req, res, next) => {
-    console.log("ERROR : ", err);
-    res.status(404).json(err.message);
-});
-
-
-
-app.listen(6001, () => {
-  console.log("Server is listening on port 6001");
+app.listen(3000, () => {
+  console.log("The server is running on port 3000");
 });
