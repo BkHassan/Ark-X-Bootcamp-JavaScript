@@ -1,5 +1,5 @@
 const fs = require("fs");
-const data = require("../posts.json");
+const data = require("D:/dev/Bootcamp ark x/Week_3/Day16_Express/posts.json");
 
 function getAllPosts() {
   return data.posts;
@@ -7,7 +7,7 @@ function getAllPosts() {
 
 function createPost(str) {
   data.posts.push(str);
-  fs.writeFileSync("../posts.json", JSON.stringify(data));
+  fs.writeFileSync("D:/dev/Bootcamp ark x/Week_3/Day16_Express/posts.json", JSON.stringify(data));
 }
 
 module.exports = {

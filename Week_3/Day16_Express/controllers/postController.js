@@ -7,7 +7,6 @@ function getpost(req, res) {
 
 function create_post(req, res) {
   let post = req.body;
-  console.log(req.body);
   createPost(post);
   res.status(200).json(post);
 }
