@@ -5,6 +5,7 @@ const jwt = require("jsonwebtoken");
 const sanitizeHtml = require("sanitize-html");
 const users = require("./data.json");
 
+
 // * send responses in json format
 app.use(express.json());
 
