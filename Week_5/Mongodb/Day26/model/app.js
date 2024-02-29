@@ -22,13 +22,13 @@ const User = mongoose.model("User", usersSchema);
 //   }
 // }
 // insertion({
-//   username: "oussama",
+//   username: "hassan",
 //   age: 21,
-//   email: "ouss@gmail.com"
+//   email: "hass@gmail.com"
 // });
 
 async function retrive(username) {
     const user = await User.findOne({ username });
       console.log("user retrivesuccessfully", user);
   }
-retrive("oussama");
+retrive("hassan");
