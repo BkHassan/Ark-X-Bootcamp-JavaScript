@@ -1,13 +1,27 @@
-const fs = require("fs");
-const data = require("D:/dev/Bootcamp ark x/Week_3/Day16_Express/posts.json");
+const mongoose = require("mongoose");
+// const { stringify } = require("querystring");
 
-function getAllPosts() {
-  return data.posts;
+
+// schema
+const postSchema = mongoose.Schema({
+  author: { type: String, require: true },
+  title: { type: String, require: true },
+  content: { type: String, require: true },
+});
+
+const Post = mongoose.model("Post", postSchema);
+
+async function createPost(post) {
+  try {
+   await Post.create(post);
+  } catch (err) {
+    console.log(" post didn't created");
+  }
 }
 
-function createPost(str) {
-  data.posts.push(str);
-  fs.writeFileSync("D:/dev/Bootcamp ark x/Week_3/Day16_Express/posts.json", JSON.stringify(data));
+async function getAllPosts() {
+  const post = await Post.find();
+  return post;
 }
 
 module.exports = {
