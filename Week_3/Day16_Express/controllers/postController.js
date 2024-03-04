@@ -1,4 +1,4 @@
-const { getAllPosts, createPost } = require("../modules/post");
+const { getAllPosts, createPost, updatepost } = require("../modules/post");
 
 
 async function create_post(req, res) {
@@ -13,8 +13,15 @@ async function getpost(req, res) {
   res.json(posts);
 }
 
+async function update_post (req, res) {
+  let modifiedpost = req.body;
+  let id = req.params.id;
+  await updatepost(id, modifiedpost);
+  res.status(200).json(id, modifiedpost);
+}
 
 module.exports = {
+  update_post,
   getpost,
   create_post,
 };
