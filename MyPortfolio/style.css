@@ -1,0 +1,57 @@
+html,
+body,
+* {
+  scroll-behavior: smooth !important;
+  /* background-color: tomato; */
+}
+
+.nav {
+  position: fixed;
+  z-index: 50;
+  backdrop-filter: blur(15px);
+  width: 100%;
+}
+
+.photo-hassan {
+  position: relative;
+}
+
+.photo-hassan::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+  width: 100%;
+  height: 200px;
+  bottom: -12.5rem;
+  border: none;
+}
+
+#TechPro {
+  padding-top: 6em;
+}
+
+.hidden {
+  display: none;
+}
+.btn {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.component {
+  opacity: 0; /* Initially hide the component */
+  animation: fadeInUp 1s ease-in-out forwards;
+}
+
+.lightHover:hover {
+  filter: drop-shadow(-0.3rem 0rem 3rem #54d2d4);
+}
+
+#toggleSwitch {
+  display: none;
+}
+
+#pic {
+  padding: 128px;
+  padding-bottom: 24px;
+}

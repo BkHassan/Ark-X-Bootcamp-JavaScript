@@ -1,0 +1,180 @@
+body {
+  background-color: rgb(18, 12, 29);
+  scroll-behavior: smooth;
+}
+
+#conta {
+  background-color: #2D2D34;
+}
+
+.nav {
+  position: fixed;
+  z-index: 50;
+  backdrop-filter: blur(15px);
+  width: 100%;
+}
+
+#moon {
+  color: white;
+
+  padding: 14px;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  background: #5a5656;
+  justify-content: center;
+}
+#moon::before {
+  content: "\f185";
+}
+#pic {
+  padding: 128px;
+  padding-bottom: 24px;
+}
+
+form.contact-form :placeholder {
+  color: white;
+}
+#form1 label {
+  color: white;
+}
+
+#technologies {
+  border-color: #1d1726;
+}
+
+#headline,
+#headline2,
+#headline3,
+#head1,
+#head2,
+#html,
+#css,
+#react,
+#tailwind,
+#js,
+#expr,
+#nod,
+#mongo,
+#git,
+#conta {
+  color: white;
+}
+#card,
+#card2,
+#card3,
+#img,
+#img2,
+#img3 {
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 2%;
+}
+
+#exampleInput90,
+#exampleInput91,
+#exampleFormControlTextarea1 {
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 2%;
+  color: white;
+}
+
+#About,
+#hcard1,
+#hcard2 {
+  background-color: rgb(18, 12, 29);
+  border-color: black;
+  box-shadow: #1d1726;
+}
+#hcard1,
+#hcard2 {
+  /* 1. inner glow - for dark mode 👇 */
+  box-shadow: inset 0 0 0.5px 1px hsla(0, 0%, 100%, 0.1),
+    /* 2. shadow ring 👇 */ 0 0 0 1px hsla(230, 13%, 9%, 0.075),
+    /* 3. multiple soft shadows 👇 */ 0 0.3px 0.4px hsla(230, 13%, 9%, 0.02),
+    0 0.9px 1.5px hsla(230, 13%, 9%, 0.045),
+    0 3.5px 6px hsla(230, 13%, 9%, 0.09);
+
+  /* aspect-ratio: 1/1; */
+  background-color: hsl(233, 8%, 19%);
+  border-radius: 12px;
+}
+#navbar {
+  background-color: transparent;
+}
+
+#toggle-section {
+  /* padding: 20px;
+  border-radius: 15px; */
+  background-color: #1d1726;
+}
+
+#tech-btn,
+#projects-btn {
+  color: white;
+  background: #1d1726;
+  border: none;
+  font-weight: bolder;
+}
+
+.active {
+  border-radius: 10px !important;
+  background-color: rgb(71, 70, 70) !important;
+}
+
+#ho,
+#ab,
+#techOnly,
+#pr,
+#co,
+#hello {
+  color: white;
+  transition: color 0.1s ease;
+}
+
+#descr,
+#description,
+#description2,
+#description3 {
+  color: darkmagenta;
+}
+
+#name,
+#insta,
+#linke,
+#github,
+#f,
+#s,
+#t {
+  color: white;
+}
+
+#ho:hover {
+  color: purple;
+}
+#ab:hover {
+  color: purple;
+}
+#pr:hover {
+  color: purple;
+}
+#techOnly:hover {
+  color: purple;
+}
+#co:hover {
+  color: purple;
+}
+
+.photo-hassan::after {
+  content: "";
+  background-color: rgb(18, 12, 29);
+  width: 100%;
+  height: 200px;
+  bottom: -12.5rem;
+  border: none;
+}
