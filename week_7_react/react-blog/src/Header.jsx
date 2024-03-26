@@ -32,7 +32,6 @@ const Header = ({ title, links, isLoggedIn, onLoginLogout, backgroundColor = "bg
     </nav>
   );
 };
-
 // App Component
 function App() {
   const links = [
