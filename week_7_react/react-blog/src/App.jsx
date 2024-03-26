@@ -10,7 +10,6 @@ const links = [
   { text: "log in", href: "/" },
   // { text: "About", href: "/about" },
 ];
-
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false); // Initial state: not logged in
   const [blogPosts, setBlogPosts] = useState([
